@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Cafeneaua cu cea mai buna narghilea.">
+    <meta name="keywords" content = "cafea, cafenea, narghilea, shisha, cafe, coffee, cocktails, bauturi, club, bar, mancare, jocuri, cafenea cu jocuri, cafenea cu narghilea, local cu narghilea, carti, table, macao, poker, activity, games, board games, food, best food, best shisha, cafenea bucuresti, bucuresti, bucuresti coffee">
+    
+    <meta name="author" content="">
+
+    <title>Nabreej Rezervare</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/vegas.min.css" rel="stylesheet">
+
+    <link href="css/tooplate-barista.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" href="images/logotest.png" type="image/x-icon">
+
+    <!--
+
+Tooplate 2137 Barista
+
+https://www.tooplate.com/view/2137-barista-cafe
+
+Bootstrap 5 HTML CSS Template
+
+-->
+</head>
+
+<body class="reservation-page">
+
+    <main>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div>
+                        <img src="images/nobglogo.png" alt=""><br>
+                        <span style="font-size: 14px;">CAFFE &nbsp • &nbsp SHISHA &nbsp • &nbsp LOUNGE</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_1">Acasa</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_2">Despre noi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_3">Meniu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_4">Recenzii</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_5">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_2">Galerie</a>
+                        </li>
+                    </ul>
+
+                    <div class="ms-lg-3">
+                        <a class="btn custom-btn custom-border-btn" href="reservation.html">
+                            Rezervare
+                            <i class="bi-arrow-up-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="booking-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="booking-form-wrap">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 p-0">
+                                    <form class="custom-form booking-form" action="#" method="post" role="form"
+                                        id="myForm">
+                                        <div class="text-center mb-4 pb-lg-2">
+                                            <em class="text-white">Completeaza rezervarea.</em>
+                                            <h2 class="text-white">Rezerva o masa :</h2>
+                                        </div>
+
+                                        <div class="booking-form-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="text" name="booking-form-name" id="booking-form-name"
+                                                        class="form-control" placeholder="Nume Complet" required>
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input class="form-control" name="booking-form-phone"
+                                                        placeholder="Telefon" required="" maxlength="10">
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input class="form-control" type="time" name="booking-form-time"
+                                                        value="14:00">
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="date" name="booking-form-date" id="booking-form-date"
+                                                        class="form-control" placeholder="Date" required="" lang="ro"
+                                                        language="ro">
+                                                </div>
+
+                                                <div class="col-lg-12 col-12">
+                                                    <input type="number" name="booking-form-number"
+                                                        id="booking-form-number" class="form-control"
+                                                        placeholder="Numar de persoane" required="">
+                                                    <textarea name="booking-form-message" rows="3" class="form-control"
+                                                        id="booking-form-message"
+                                                        placeholder="Comentarii (Optional)"></textarea>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
+                                                    <button type="button" class="form-control"
+                                                        onclick="sendEmail()">Trimite</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <script type="text/javascript">
+                                        //  modificat cod
+                                        emailjs.init("NmvIdJl_F6J9TOaRt");
+
+                                        function getDayOfWeek(dateString) {
+                                            const [year,month,day] = dateString.split("-").map(Number);
+                                            const date = new Date(year, month - 1, day);
+                                            const days = ['Duminica', 'Luni', 'Marti', 'Miercuri', 'Joi', 'Vineri', 'Sambata'];
+
+                                            return days[date.getDay()];
+                                        }
+
+                                        function getMonth(dateString) {
+                                            const months = ['Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'];
+                                            dateString = Number(dateString.split("-")[1]);
+
+                                            return months[dateString - 1];
+                                        }
+
+                                        function sendEmail() {
+                                            var form = document.getElementById("myForm");
+
+                                            // Set predefined values for 'to' and 'from'
+                                            var predefinedTo = "nabreejlounge@gmail.com";
+                                            var predefinedFrom = "Reservation";
+
+                                            // Combine all form inputs into the message body
+                                            var messageBody = "Nume: " + form.elements["booking-form-name"].value + "\n" +
+                                                "Telefon: " + form.elements["booking-form-phone"].value + "\n" +
+                                                "Ora: " + form.elements["booking-form-time"].value + "\n" +
+                                                "Data: " + form.elements["booking-form-date"].value + "\n" +
+                                                "Detalii: " + form.elements["booking-form-message"].value;
+
+                                            //  modificat cod
+                                            emailjs.send("service_luozchi", "template_as225b3", {
+                                                to: predefinedTo,
+                                                from_name: predefinedFrom,
+                                                subject: "Rezervare noua! - " + getDayOfWeek(form.elements["booking-form-date"].value) + " " + getMonth(form.elements["booking-form-date"].value) + " " + form.elements["booking-form-date"].value + "\n",
+                                                message: messageBody
+                                            })
+                                                .then(function (response) {
+                                                    console.log("Te asteptam!", response);
+                                                    alert("Rezervarea a fost trimisa cu succes.");
+                                                }, function (error) {
+                                                    console.log("Rezervarea a esuat.", error);
+                                                    alert("Ceva nu a mers bine. Te rugam sa incerci din nou.");
+                                                });
+                                        }
+                                    </script>
+
+
+                                </div>
+
+                                <div class="col-lg-5 col-12 p-0">
+                                    <div class="booking-form-image-wrap">
+
+                                        <img src="images/cocktail2.png" class="booking-form-image img-fluid" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 me-auto">
+                        <em class="text-white d-block mb-4">Unde ne gasesti?</em>
+
+                        <strong class="text-white">
+                            <i class="bi-geo-alt me-2"></i>
+                            Strada Maria Rosetti 24, București 030167
+                        </strong>
+
+                        <ul class="social-icon mt-4">
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/nabreej.caffe/"
+                                    class="social-icon-link bi-instagram">
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.tiktok.com/@nabreejbucharest" target="_new"
+                                    class="social-icon-link bi-tiktok">
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://api.whatsapp.com/send?phone=40787803586&amp;text" target="_blank"
+                                    class="social-icon-link bi-whatsapp">
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                        <em class="text-white d-block mb-4">Contact</em>
+
+                        <p class="d-flex mb-1">
+                            <strong class="me-2">Telefon:</strong>
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                +(40)
+                                787 803 586
+                            </a>
+                        </p>
+
+                        <p class="d-flex">
+                            <strong class="me-2">Email:</strong>
+
+                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                nabreejlounge@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+
+                    <div class="col-lg-5 col-12">
+                        <em class="text-white d-block mb-4">Program de lucru</em>
+
+                        <ul class="opening-hours-list">
+                            <li class="d-flex">
+                                Luni-Vineri
+                                <span class="underline"></span>
+
+                                <strong>14:00 - 02:00</strong>
+                            </li>
+
+                            <li class="d-flex">
+                                Sambata&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <span class="underline"></span>
+
+                                <strong>14:00 - 02:00</strong>
+                            </li>
+
+                            <li class="d-flex">
+                                Duminica &nbsp&nbsp&nbsp&nbsp
+                                <span class="underline"></span>
+
+                                <strong>14:00 - 02:00</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-4">
+                        <p class="copyright-text mb-0">Copyright © 2024 Nabreej Caffe & Lounge.
+                            <!-- - Design: <a rel="sponsored" href="https://www.tooplate.com"
+                                target="_blank">YourFutureWebsite</a> -->
+                        </p>
+                    </div>
+                </div>
+        </footer>
+    </main>
+
+    <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=40787803586&text" class="float"
+            target="_blank">
+            <i style="font-size: 27px;" class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <a class="roeng-container" href="reservation_en.html" class="float">
+            <img style="width: 40px;" src="images/uk.svg" alt="">
+        </a>
+    </body>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
