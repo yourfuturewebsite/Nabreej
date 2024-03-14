@@ -11,9 +11,7 @@
   $(function () {
     $('.hero-slides').vegas({
       slides: [
-        { src: 'images/slides/Shisha-1.jpg' },
-        { src: 'images/slides/Shisha-2.jpg' },
-        { src: 'images/slides/Shisha-3.jpg' }
+        { src: 'images/slides/Shisha-1.jpg' }
       ],
       timer: false,
       animation: 'kenburns',
